@@ -1,0 +1,26 @@
+#include "main.h"
+
+int maxExp(char* type) {
+    int max_exp = 0;
+
+    if (strcmp(type, "°­¾ÆÁö") == 0 || strcmp(type, "Åä³¢") == 0) {
+        max_exp = 2000;
+    }
+    else if (strcmp(type, "°í¾çÀÌ") == 0) {
+        max_exp = 2500;
+    }
+    else if (strcmp(type, "Á·Á¦ºñ") == 0 || strcmp(type, "ÆÒ´õ") == 0) {
+        max_exp = 3000;
+    }
+    else if (strcmp(type, "µ¹°í·¡") == 0) {
+        max_exp = 3500;
+    }
+    else if (strcmp(type, "Æë±Ï") == 0) {
+        max_exp = 4000;
+    }
+    else if (strcmp(type, "¿ë") == 0) {
+        max_exp = 8000;
+    }
+
+    return max_exp;
+}
