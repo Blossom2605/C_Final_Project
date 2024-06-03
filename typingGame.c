@@ -4,7 +4,7 @@ void draw_UI();
 
 int typingGame(int* result) {
     // 초기 점수는 0점, life는 3개
-    int score = 0, life = 3;
+    int score = 0, life = 4;
 
     while (1) {
         // 미니게임 영역 초기화
