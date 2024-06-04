@@ -69,9 +69,9 @@ int typingGame(int* result) {
             input[len - 1] = '\0';
         }
 
-        // 입력받은 문장이 제시된 문장과 같다면 10점 추가
+        // 입력받은 문장이 제시된 문장과 같다면 1점 추가
         if (strcmp(sentence[n], input) == 0) {
-            score += 10;
+            score += 1;
         }
         // 아니라면 목숨 -1;
         else if (strcmp(sentence[n], input) != 0) {
